@@ -261,9 +261,11 @@ section#section-3 {
 
     .item {
       text-align: center;
+      flex: 1 0;
 
-      @include for-phone-only {
-        margin-bottom: 55px;
+      margin-bottom: 55px;
+      @include for-tablet-landscape-up {
+        margin-bottom: 0;
       }
 
       .img {
@@ -541,10 +543,10 @@ section#section-7 {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    @include for-phone-only {
+    justify-content: center;
+    @include for-tablet-landscape-up {
       width: 70%;
-      justify-content: center;
+      justify-content: space-between;
     }
 
     align-items: baseline;
@@ -554,9 +556,12 @@ section#section-7 {
 
     .item {
       max-width: 170px;
+      padding-left: 10px;
+      padding-right: 10px;
 
-      @include for-phone-only {
-        margin-bottom: 50px;
+      margin-bottom: 50px;
+      @include for-tablet-landscape-up {
+        margin-bottom: 0;
       }
       .title {
         margin-top: 25px;
