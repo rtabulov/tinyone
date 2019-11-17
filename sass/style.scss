@@ -124,6 +124,9 @@ section#section-1 {
     position: relative;
 
     margin-bottom: 259px;
+    .menu {
+      cursor: pointer;
+    }
 
     .logo {
       position: absolute;
